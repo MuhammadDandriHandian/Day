@@ -8,3 +8,13 @@ const audio = document.querySelector('.audio');
   audio.addEventListener('pause', () => {
     body.classList.remove('play-music');
   });
+
+  $(function(){
+
+    if (!$('.envelope').hasClass('open')){
+      $('.envelope').click(function(){
+        $(this).removeClass('new').addClass('open');
+      });
+    }
+    
+  });
